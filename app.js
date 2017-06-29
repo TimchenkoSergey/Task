@@ -20,20 +20,25 @@ function getNewCarsList(cars) {
 
     cars.forEach((car) => {
         if (isCarRedBMW(car)) {
-            newCarsList.push({ 'id' : car.id, 'title' : RED_BMW_CAR });
+            newCarsList.push(new NewCar(car.id, RED_BMW_CAR));
         }
         else if (isCarRed(car)) {
-            newCarsList.push({ 'id' : car.id, 'title' : RED_CAR });
+            newCarsList.push(new NewCar(car.id, RED_CAR));
         }
         else if (isCarBlack(car)) {
-            newCarsList.push({ 'id' : car.id, 'title' : BLACK_CAR });
+            newCarsList.push(new NewCar(car.id, BLACK_CAR));
         }
         else {
-            newCarsList.push({ 'id' : car.id, 'title' : CAR });
+            newCarsList.push(new NewCar(car.id, CAR));
         }
     });
 
     return newCarsList;
+}
+
+function NewCar(id, title) {
+    this.id    = id;
+    this.title = title;
 }
 
 function isCarRed(car) {

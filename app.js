@@ -13,6 +13,13 @@ const RED_BMW_CAR = 'Best car';
 const BLACK_CAR   = 'Black car';
 const CAR         = 'Car';
 
+class NewCar {
+    constructor(id, title) {
+        this.id    = id;
+        this.title = title;
+    }
+}
+
 console.log(getNewCarsList(cars));
 
 function getNewCarsList(cars) {
@@ -34,11 +41,6 @@ function getNewCarsList(cars) {
     });
 
     return newCarsList;
-}
-
-function NewCar(id, title) {
-    this.id    = id;
-    this.title = title;
 }
 
 function isCarRed(car) {

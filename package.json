@@ -1,0 +1,20 @@
+{
+  "name": "khnadu",
+  "version": "1.0.0",
+  "description": "Server side of the department website.",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js --presets es2015,stage-2"
+  },
+  "author": "Sergey Timchenko",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-polyfill": "^6.23.0"
+  },
+  "dependencies": {
+  }
+}
